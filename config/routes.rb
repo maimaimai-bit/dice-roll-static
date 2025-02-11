@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   # get "/your_first_screen" => "pages#first"
   
+  get "/", to: "dice#index"
+  get "/dice/:number/:sides", to: "dice#roll"
 end
